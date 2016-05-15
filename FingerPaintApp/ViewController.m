@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DrawingView.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,20 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    DrawingView *dview = (DrawingView*)self.view;
+    dview.p1 = CGPointZero;
+    dview.p2 = CGPointZero; 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
